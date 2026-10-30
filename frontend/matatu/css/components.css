@@ -1,0 +1,57 @@
+card-wrapper {
+   border: 3px solid yellow;
+}
+.card {
+   height: 140px;
+   min-width: 90px;
+   background-color: #fff;
+   position: relative;
+   padding: 4px ;
+   border-radius: 4px;
+   display: grid;
+    grid-template-areas:
+    "top ."
+    "center center"
+    ". bottom";
+    grid-template-rows: 50px 1fr 50px;
+   box-shadow: 4px 8px 16px rgba(0,0,0,0.5);
+
+   .card-top-left {
+      grid-area: top;
+   }
+   .card-center {
+      grid-area: center;
+       justify-self: center;
+      position: relative;
+
+    & > .suit{
+        transform: scale(3)
+    }
+   }
+
+   .card-bottom-right {
+      justify-self: end;
+   }
+
+   .card-bottom-right {
+      grid-area: bottom;
+       transform: rotate(180deg); 
+    }
+
+   div {
+      /border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        font-weight: bold;
+
+      .rank {
+            font-size: 24px;
+        }
+      .suit {
+           font-size: 16px; 
+        }
+      
+    }
+
+}
