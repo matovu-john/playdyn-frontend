@@ -6,6 +6,7 @@ document.querySelectorAll('a').forEach( (link) => {
         event.preventDefault();
         const url = new URL(link.href);
         let path = url.pathname;
+        console.log(path);
 
         if (path === '/matatu/index.html') {
             const gameId = await createGameSession();
