@@ -8,7 +8,7 @@ document.querySelectorAll('a').forEach( (link) => {
         let path = url.pathname;
         console.log(path);
 
-        if (path === '/matatu/index.html') {
+        if (path.startsWith('/matatu/')) {
             const gameId = await createGameSession();
             url.searchParams.set('id' ,gameId);
             window.location.href = url;
