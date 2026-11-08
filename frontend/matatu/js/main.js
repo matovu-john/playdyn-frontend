@@ -6,13 +6,13 @@ import {buildDiscardPile} from "./modules/builders/ui/build-discard-pile.js";
 import {applyOverlap} from "./modules/handlers/overlapHandler.js";
 import {drawableClickCardHander} from "./modules/handlers/drawable-click-card-hander.js";
 import {playableCardClickHandler} from "./modules/handlers/playable-card-click-handler.js";
-
+/*
 export const socket = new WebSocket(`ws://${location.hostname}:5000`);
 
 socket.onopen = () => {
     console.log('Successfully connected')
 }
-
+*/
 let url = new URL(window.location.href);
 let gameId = url.searchParams.get('id');
 
