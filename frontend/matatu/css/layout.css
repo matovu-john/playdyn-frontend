@@ -1,0 +1,106 @@
+body { 
+   background-color: rgb(251,251,251);
+   overflow-y: hidden;
+}
+
+.app-wrapper {
+   height: 100vh;
+   background-color: #1e1e1e;
+   color: rgb(251,251,251);
+   max-width: 400px;
+   margin: auto;
+   position: relative;
+}
+
+.header {
+   / border: 1px solid;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   background-color: #1e1e1e;
+   border-bottom: 1px solid rgba(251,251,251,0.3);
+}
+
+.header {
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+.two-player-container {
+   background-color: #1e1e1e;
+   display: grid;
+   grid-template-areas:
+   "top top top"
+   "left center right"
+   "bottom bottom bottom";
+   grid-template-columns: 110px minmax(0, 1fr) 90px;
+   grid-template-rows: 170px 1fr 170px;
+   gap: 1px;
+   height: 500px;
+   max-width: 100%;
+   padding: 0 10px;
+
+   & > div {
+    /  border: 1px solid red;
+   }
+
+   .top {
+      grid-area: top;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+
+   .left {
+      grid-area: left;
+   }
+
+   .center {
+      grid-area: center;
+   }
+
+   .right {
+      grid-area: right;
+   }
+
+   .bottom {
+      grid-area: bottom;
+   }
+
+   .top, .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.two-player-container, .two-player-container * {
+   -webkit-tap-highlight-color: transparent;
+}
+
+.hand {
+  / border: 2px solid;
+   min-width: 0;
+    width: 90%;
+   max-width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+   / padding: 5px;
+    justify-content: safe center;
+   border-radius: 5px;
+
+    .card:first-child {
+       margin-left: 0px;
+    }
+
+   .card {
+      margin-left: var(--overlap, 0px);
+      transition: all 0.2s ease-in-out;
+   }
+}

@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    border: 1px solid;
+    padding: 0 10px;
+    background-color: rgb(251,251,251);
+    max-width: 400px;
+    margin: auto;
+}
+
+.header {
+    border: 1px solid;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-family: unset;
+    color: rgb(40,40,40);
+    font-size: 24px;
+    span {
+        color: rgb(140,0,0);
+    }
+}
+
+.main {
+   border: 1px solid;
+    height: 400px;
+}
+
+.game-cards-wrapper {
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+   border: 1px solid;
+    height: 100px;
+    margin-bottom: auto;
+}
