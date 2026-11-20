@@ -1,0 +1,41 @@
+.login-link {
+    border: 1px solid;
+    height: fit-content;
+    padding: 4px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(104,0,179);
+    color: rgb(251,251,251);
+}
+
+.game-card {
+   / border: 1px solid;
+    width: 250px;
+    padding: 5px;
+    background-color: rgb(251,251,251);
+    border-radius: 8px;
+    color: rgba(40,40,40,0.9);
+    box-shadow: 3px 3px 3px;
+    text-align: center;
+    .game-name {
+        text-align: center;
+       / color: rgb(104,0,179);        
+    }
+    .game-description {
+        color: rgba(40,40,40,0.5);
+        font-size: 16px;
+        line-height: 20px;
+        margin: 10px 0;
+        text-align: left;
+    }
+    .play-btn {
+        width: 80%;
+        padding: 4px 0;
+        font-size: 16px;
+        background-color: rgb(104,0,179);
+        border: none;
+        color: rgb(251,251,251);
+        border-radius: 8px;
+    }
+}
