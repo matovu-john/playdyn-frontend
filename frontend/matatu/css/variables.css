@@ -1,0 +1,7 @@
+:root {
+    --overlap: 
+}
+
+.hand .card {
+    --overlap: 0px;
+}

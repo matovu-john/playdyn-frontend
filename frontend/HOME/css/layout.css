@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    /* border: 1px solid; */
+    /* padding: 0 10px; */
+    background-color: rgb(251,251,251);
+    margin: auto;
+}
+
+.app-wrapper {
+   height: 100vh;
+   background-color: #1e1e1e;
+   color: rgb(251,251,251);
+   max-width: 800px;
+   margin: auto;
+   position: relative;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    color: orange;
+    padding: 10px;
+   / width: 150px;
+   / border: 1px solid;
+    line-height: 24px;
+}
+
+.matatu-link  {
+    display: block;
+   / border: 1px solid;
+    width: fit-content;
+    margin: auto;
+    font-size: 48px;
+     padding: 10px;
+}
+.header {
+   / border: 1px solid;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-family: unset;
+    color: rgba(251,251,251,0.8);
+    font-size: 24px;
+}
+
+.main {
+  / border: 1px solid;
+    height: 400px;
+    h1 {
+        text-align: center;
+    }
+}
+
+.action-btn {
+    padding: 8px 12px;
+}
+
+.game-cards-wrapper {
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    display: none;
+}
+
+footer {
+  / border: 1px solid;
+    height: 100px;
+    margin-bottom: auto;
+}
